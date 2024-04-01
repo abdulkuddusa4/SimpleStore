@@ -19,4 +19,4 @@ class Order(models.Model):
     payment_method = models.CharField(max_length=400)
     payment_data = models.CharField(max_length=400)
     items = models.TextField()
-    fulfilled = models.BooleanField()
+    fulfilled = models.BooleanField(default=False)

@@ -8,6 +8,6 @@ urlpatterns = [
     url(r'^cart/remove/$',views.removefromcart,name='remove'),
     url(r'^cart/checkout/$',views.checkout,name='checkout'),
     url(r'^cart/checkout/complete/$',views.completeorder, name='complete_order'),
-    url(r'^admin-login/$',views.adminLogin,name="admin_login"),
+    url(r'^admin-login/$',views.adminLogin,name="admin_login.html"),
     url(r'^admin-panel/$',views.adminDashboard,name='admin'),
 ]

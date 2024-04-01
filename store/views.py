@@ -97,6 +97,7 @@ def completeorder(request):
         payment_data=request.POST['payment_data'],
         items=genItemList(cart),
     )
+    order.save()
     request.session['cart'] = []
     return render(request,'complete_order.html')
 
@@ -110,13 +111,14 @@ def adminLogin(request):
             login(request,user)
             return redirect('admin')
         else:
-            return render(request,'admin_login', {'login':False})
-    return render(request,'admin_login')
+            return render(request,'admin_login.html', {'login':False})
+    return render(request,'admin_login.html')
 
 
 @login_required
 def adminDashboard(request):
     orders = Order.objects.all()
+    print(orders)
     ctx={
         'orders': orders,
     }
