@@ -1,4 +1,4 @@
-#!/home/roni/PycharmProjects/SimpleStore/venv/bin/python
+#!/home/mohammed/Documents/SimpleStore/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,4 +1,4 @@
-#!/home/roni/PycharmProjects/SimpleStore/venv/bin/python
+#!/home/mohammed/Documents/SimpleStore/venv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
